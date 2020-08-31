@@ -50,13 +50,14 @@ inoremap <      <><Left>
 inoremap (      ()<Left>
 inoremap "      ""<Left>
 inoremap {<CR>  {<CR>}<Esc>O
+inoremap psvm<CR>  public static void main(String[] args){<CR>}<Esc>O   
 inoremap {{     {
-inoremap ((     (      
+inoremap ((     (
 inoremap <<     <
 inoremap {}     {}
-inoremap ""     "" 
-inoremap ()     () 
-inoremap <>     <> 
+inoremap ""     ""
+inoremap ()     ()
+inoremap <>     <>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 let g:NERDTreeGitStatusIndicatorMapCustom = {
